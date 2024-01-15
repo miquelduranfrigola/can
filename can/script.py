@@ -4,7 +4,6 @@ from .image import display_fullscreen_image
 
 
 class Script(object):
-    
     def __init__(self):
         pass
 
@@ -32,11 +31,14 @@ class Script(object):
         self._print("Benvinguda a Ca'n", "yellow")
 
     def run(self, input_line):
-        if input_line == "adeu":
-            return self._print("adeu doncs")
+        if input_line == "Quan veurem el resultat?":
+            return self._print("Aviat esperem :)")
+
+        if input_line == "Hola!":
+            return self._print("Estem en procés de creació a l'Ateneu de 9Barris!")
         
-        if input_line == "hola":
-            return self._print("hola hola")
-        
+        if input_line == "Fins quan?":
+            return self._print("Tenim la Residència de Taula fins el 26 de gener.")
+
         if input_line == "imatge":
             self._display_fullscreen_image("fageda.jpeg")

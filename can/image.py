@@ -1,10 +1,11 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 
+
 def display_fullscreen_image(image_path, display_time=5):
     root = tk.Tk()
-    root.attributes('-fullscreen', True)
-    root.configure(background='black')  # Set background to black
+    root.attributes("-fullscreen", True)
+    root.configure(background="black")  # Set background to black
 
     # Load the image in its natural size
     img = Image.open(image_path)
@@ -17,7 +18,7 @@ def display_fullscreen_image(image_path, display_time=5):
     y = (screen_height - img.height) // 2
 
     # Display the image
-    label = tk.Label(root, image=photo_img, bg='black')
+    label = tk.Label(root, image=photo_img, bg="black")
     label.place(x=x, y=y)
 
     # Close the window after 'display_time' seconds
