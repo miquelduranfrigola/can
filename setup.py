@@ -7,8 +7,8 @@ setup(
     version="0.1",
     packages=find_packages(),
     entry_points={
-        'console_scripts': [
-            'can = can:main',
+        "console_scripts": [
+            "can = can:main",
         ],
     },
 )
