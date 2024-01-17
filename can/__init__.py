@@ -1,11 +1,15 @@
 import os
+import subprocess
 import colorama
-from colorama import Fore
 import subprocess
 from .script import Script
 
+TYPEWRITER_SOUND = True
+
 # Initialize colorama
 colorama.init(autoreset=True)
+
+root = os.path.dirname(os.path.abspath(__file__))
 
 
 def clear_screen():
@@ -21,14 +25,24 @@ def set_terminal_style():
     subprocess.run(["osascript", "-e", style_code])
 
 
+def activate_loud_typing():
+    apple_script = """
+    tell application "Loud Typer"
+        activate
+    end tell
+    """
+    subprocess.run(["osascript", "-e", apple_script])
+
+
 def main():
+    if TYPEWRITER_SOUND:
+        activate_loud_typing()
     set_terminal_style()
     clear_screen()
     script = Script()
     script.header()
-
     while True:
-        user_input = input(Fore.LIGHTGREEN_EX)
+        user_input = input()
         script.run(user_input)
 
 

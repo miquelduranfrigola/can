@@ -46,9 +46,9 @@ class Script(object):
 
     def run(self, input_line):
         if input_line == "Quan veurem el resultat?":
-            return self._print("Aviat esperem :)")
+            return self._print("Aviat, esperem 🙂")
 
-        if input_line == "Hola!":
+        if input_line == "Què feu?":
             return self._print("Estem en procés de creació a l'Ateneu de 9Barris!")
 
         if input_line == "Fins quan?":

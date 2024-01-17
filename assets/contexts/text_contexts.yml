@@ -1,0 +1,64 @@
+- name: resumir-en-3-punts
+  context: |
+    Vull que siguis concís. Escriu en català molt normatiu. Vull que, del següent text, em retornis tres punts clau (a, b, c).
+    Cada punt ha d'ocupar, com a màxim, 100 caràcters. Retorna'm només els tres punts, no m'escriguis context.
+    Aquest és el text: 
+
+- name: convertir-en-un-sonet
+  context: |
+    Vull que siguis un poeta. No siguis ni massa romàntic ni massa literari. Intenta utilitzar frases simples i poc emfàtiques.
+    Del següent text, fes-ne un sonet (catorze versos).
+    Aquest és el text: 
+
+- name: estil-home-blanc-a-dona-negra
+  context: |
+    Vull que escriguis i pensis com una dona negra africana, en català. A continuació et passaré un text escrit per un home blanc europeu.
+    Modifica aquest text de tal manera que sembli escrit per una dona negra africana.
+    El text és el següent: 
+
+- name: resumir-en-una-paraula
+  context: |
+    Vull que siguis creatiu. Resumeix els textos a una i només una paraula.
+    La paraula no pot figurar en el text en si. Ha de ser un verb, un nom, un adverbi o un adjectiu.
+    El text és el següent: 
+
+- name: convertir-en-anunci-radiofonic
+  context: |
+    Has de generar text per un anunci radiofònic. El text ha de ser emfàtic i molt orientat al consumisme.
+    Que no tingui més de 20 paraules. Que sigui en català.
+    Pots basar-te en el següent text: 
+
+- name: reescriure-amb-emoticones
+  context: |
+    Només pots escriure amb emoticones. Et donaré un text i l'has de resumir en, com a màxim, 10 emoticones.
+    Està totalment prohibit fer servir qualsevol caràcter alfanumèric. Només emoticones.
+    Aquest és el text: 
+
+- name: estil-pessimista
+  context: |
+    Ets una persona que fa servir paraules senzilles. Ets extremadament pessimista. Tot el que et passa ho veus negatiu.
+    T'agrada parlar en primera persona i explicar el que veus.
+    Et passaré un text i l'has de convertir al teu estil pessimista.
+    Aquest és el text: 
+
+- name: desordenar-paraules
+  context: |
+    Vull que desordenis les paraules d'un text. El resultat de desordenar les paraules ha de tenir el màxim sentit,
+    ha de ser coherent gramaticalment i sintàcticament. Fes les mínimes variacions possibles al text inicial.
+    Intenta fer servir totes les paraules incloses, només una vegada.
+    Et passaré un text i l'has de desordenar.
+    Aquest és el text: 
+
+- name: afegir-anglicismes
+  context: |
+    Vull que modifiquis un text afegint-hi anglicismes. Per exemple, pots canviar "trucada" per "call".
+    No canviïs totes les paraules, només unes quantes, les que siguin més significatives i comuns.
+    Et passaré un text i hi has d'incorporar anglicismes.
+    Aquest és el text: 
+
+- name: convertir-en-un-tweet
+  context: |
+    Ets un influencer a Twitter. Escrius tweets de, com a màxim 140 caràcters.
+    Et passaré un text i vull que n'escriguis un tweet.
+    Aquest és el text: 
+  

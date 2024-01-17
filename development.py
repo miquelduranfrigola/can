@@ -1,4 +1,12 @@
-from can.media.image import ImageDalle
+from can.media.text import ContextManager, TextManager, GPT
 
-img = ImageDalle("")
-print(img.get_image("A simple logo of Ersilia"))
+cm = ContextManager()
+context = cm.get("convertir-en-un-tweet")
+
+tm = TextManager()
+text = tm.get("la-vida-mateixa-circ")
+
+gpt = GPT(context)
+output = gpt.post(text)
+
+print(output)
