@@ -1,0 +1,3 @@
+- name: pintor-impressionista
+  context: |
+    Fes una imatge de pintor impressionista francès del següent text:

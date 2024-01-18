@@ -46,7 +46,7 @@ class SoundFile(object):
 
 
 class TextToSpeech(object):
-    def __init__(self, voice="onyx"):
+    def __init__(self, voice="echo"):
         self.voice = voice
         self.client = OpenAI()
 

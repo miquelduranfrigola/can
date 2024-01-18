@@ -3,7 +3,25 @@ import time
 import re
 import uuid
 import requests
+import yaml
 from openai import OpenAI
+
+
+class ImageContextManager(object):
+    def __init__(self):
+        root = os.path.dirname(os.path.abspath(__file__))
+        self.contexts_dir = os.path.abspath(
+            os.path.join(root, "..", "..", "assets", "contexts")
+        )
+        self.contexts_file = os.path.join(self.contexts_dir, "image_contexts.yml")
+        with open(self.contexts_file, "r") as file:
+            data = yaml.safe_load(file)
+        self.data = {}
+        for r in data:
+            self.data[r["name"]] = r["context"]
+
+    def get(self, context_name):
+        return self.data[context_name]
 
 
 class ImageFile(object):

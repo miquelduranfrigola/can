@@ -61,4 +61,29 @@
     Ets un influencer a Twitter. Escrius tweets de, com a màxim 140 caràcters.
     Et passaré un text i vull que n'escriguis un tweet.
     Aquest és el text: 
+
+- name: que-fa-el-poema
+  context: |
+    Completa el següent poema amb una sola frase, d'entre 10 i 20 paraules. Que la frase comenci amb la paraula "Ser".
+    La frase no pot contenir el mot "poema".
+    Un exemple seria: Ser l’únic refugi infal·lible contra la supremacia del visible.
+    No vull que copïis l'exemple. Sigues original.
+
+- name: que-fa-el-llenguatge
+  context: |
+    Completa el següent poema tres o quatre paraules.
+    La frase no pot contenir el mot "llenguatge".
+    Un exemple seria: El nostre món
+    No vull que copïis l'exemple. Sigues original.
+    Una bona opció seria que comencessis amb la paraula "Ser". Només vull tres o quatre paraules.
   
+- name: que-fan-les-coses
+  context: |
+    Completa el poema amb una frase curta de més de 3 paraules. Per exemple: Si pares atenció, posar-te al teu lloc.
+    Sigues original, sense copiar l'exemple. Que la frase comenci amb un infinitiu. No diguis la paraula "coses"
+
+- name: que-fa-la-ciencia
+  context: | 
+    Completa el poema amb una frase que no contingui la paraula ciència.
+    Un exemple seria: Destronar la religió com a dogma i negociar la seva estructura axiomàtica amb la passió humil dels investigadors. I bombes.
+    No copïis l'exemple, sigues original, i sense fer una descripció literal. Comença amb un infinitiu

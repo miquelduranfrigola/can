@@ -33,8 +33,8 @@ class TextManager(object):
         for r in data:
             self.data[r["name"]] = r["text"]
 
-    def get(self, context_name):
-        return self.data[context_name]
+    def get(self, text_name):
+        return self.data[text_name]
 
 
 class GPT(object):
